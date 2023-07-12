@@ -1,0 +1,247 @@
+/* Custom Css theme here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+.footer a {
+    color: var(--black-color);
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.font-family-montserrat-thin {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.font-family-montserrat-extra-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.font-family-montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.font-family-montserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.font-family-montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.font-family-montserrat-semibold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#header { height: 80px; }
+
+.content-hero {
+    height: 657px;
+}
+.content-hero-section {
+    height: 443px;
+}
+
+.hero-heading {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+}
+
+form#hero-form select {
+    font-size: 0.90rem!important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    min-height: 52px;
+}
+
+/* box shadow */
+.box-shadow {
+    box-shadow: 0px 0px 30px 0px #00000033;
+}
+.box-shadow-op20 {
+    box-shadow: 0px 0px 20px 0px #00000033;
+}
+
+.box-form-hero { width: 920px; }
+
+.dotted {
+    width: 8px;
+    height: 8px;
+}
+
+/* Height */
+.height-638px {
+    height: 638px;
+}
+
+.height-461 {
+    height: 475px;
+}
+
+.width-689 {
+    width: 689px;
+}
+
+/*  */
+.coachingo-category {
+    width: 239px;
+    height: 239px;
+}
+
+/* section-app */
+.section-app {
+    width: 100%;
+    height: 588px;
+    align-self: center;
+    background-image: url("./../images/ellipsis.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: ellipse(91% 50% at 50% 50%);
+    overflow: hidden;
+}
+
+.pt-theme-13 {
+    padding-top: 13px;
+}
+
+.pt-theme-28 {
+    padding-top: 28px;
+}
+
+.pt-theme-30 {
+    padding-top: 30px;
+}
+
+.pt-theme-43 {
+    padding-top: 43px;
+}
+
+.pt-theme-58 {
+    padding-top: 58px;
+}
+
+.footer-social-container {
+    list-style-type: none;
+    margin-top: 63px;
+}
+
+.footer-social-item-2 {
+    margin-right: 20px;
+}
+
+.footer-col-link-container {
+    list-style-type: none;
+    margin-top: 57px;
+}
+
+.footer-link-item {
+    margin-bottom: 20px;
+}
+
+.footer-col-link-container .footer-link-item a {
+    transition: all 0.4s;
+}
+
+/* Price */
+.price-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.price-input .field{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.field input{
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    margin-left: 12px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.field input:nth-child(2) { text-align: right; }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.price-input .separator{
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+.slider .progress{
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    border-radius: 5px;
+    background: #161616;
+}
+.range-input{
+    position: relative;
+}
+.range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #EB5062;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #EB5062;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.ecoach-profile{
+    left: 100px;
+    bottom: -35%;
+    border: 2px solid red;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* Map Overview */
+.map-overview {
+    height: 488px;
+    background-image: url('./../images/map-coach.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

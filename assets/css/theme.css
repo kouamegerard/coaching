@@ -1,0 +1,336 @@
+/**
+ * Author: Geneses 0.0
+ * Company: Fam Digitale
+ * Version: 0.0.1
+ * Description: Coaching template, make relation with users and the training coach
+ */
+
+
+/* General */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* Colors for text */
+.primary-color { color: #EB5062; }
+.secondary-color { color: #F37D49; }
+.light-color { color: #F5F5F5; }
+.dark-color { color: #161616; }
+.light-opacity-color {
+    color: #FFFFFF59;
+}
+
+/* Theme colors for background */
+.bg-primary-color { background-color: #EB5062; }
+.bg-secondary-color { background-color: #F37D49; }
+.bg-light-color { background-color: #F5F5F5; }
+.bg-dark-color { background-color: #161616; }
+
+.btn-theme-dark {
+    color: #F5F5F5;
+    background-color: #161616;
+}
+
+/* Theme gradient */
+.bg-theme-gradient-primary {
+    background: linear-gradient(180deg, rgba(243, 125, 73, 0.38) 0%, rgba(235, 80, 98, 0.38) 100%);
+}
+.bg-theme-gradient-dark-prime {
+    background: linear-gradient(180deg, #F37D49 0%, #EB5062 100%);
+}
+/* Ended General */
+
+.navbar-absolute-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+.navbar-absolute-top-scroller {
+    margin-left: auto;
+}
+
+/* Image Logo */
+.navbar-brand-logo {
+    width: 100%;
+    min-width: 7.5rem;
+    max-width: 7.5rem;
+}
+
+.btn-transition {
+    transition: all .2s ease-in-out;
+}
+
+.btn-theme-gradient {
+    background: linear-gradient(180deg, #F37D49 0%, #EB5062 100%);
+}
+
+/* Font size */
+.f-size-14 {
+    font-size: 0.875rem;
+}
+.f-size-15 {
+    font-size: 0.938rem;
+}
+
+/* Radius */
+.theme-rounded-3{
+    border-radius: 0.783rem;
+}
+
+/* Forms */
+/* ============= */
+.form-group-rounded-left-top-8{
+    border-top-left-radius: 8px;
+    overflow-x: hidden;
+}
+.form-group-rounded-left-bottom-8{
+    border-bottom-left-radius: 8px;
+    overflow-x: hidden;
+}
+.form-group-rounded-right-top-8{
+    border-top-right-radius: 8px;
+    overflow-x: hidden;
+}
+.form-group-rounded-right-bottom-8{
+    border-bottom-right-radius: 8px;
+    overflow-x: hidden;
+}
+
+.hero-image-absolute {
+    position: absolute;
+    top: 83px;
+    right: -110px;
+    z-index: 1;
+}
+
+.hero-image-absolute img {
+    width: 730px;
+    height: 730px;
+    object-fit: cover;
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+
+.theme-box-shadow {
+    box-shadow: 0px 0px 30px 0px #00000040;
+}
+
+.theme-box-border {
+    border: 4px solid #EB5062;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    margin-left: -38px;
+}
+
+.theme-box-border-left {
+    border: 4px solid #F37D49;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    margin-right: -38px;
+}
+
+/* Sizing */
+.w-299px {
+    width: 299px;
+}
+.w-210px {
+    width: 210px;
+}
+.w-25px {
+    width: 25px;
+}
+.h-25px {
+    height: 25px;
+}
+.h-299px {
+    height: 299px;
+}
+.h-210px {
+    height: 210px;
+}
+.w-33 {
+    width: 33.33%;
+}
+.w-40 {width: 40%;}
+.w-90 {width: 90%;}
+.w-90 {width: 90%;}
+
+/* Font size */
+.fs-110 {
+    font-size: 110px;
+}
+.fs-42 {
+    font-size: 42px;
+}
+.fs-38 {
+    font-size: 38px;
+}
+.fs-34 {
+    font-size: 34px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-29 {
+    font-size: 29px;
+}
+.fs-17 {
+    font-size: 17px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+
+
+/* Spacing negatif */
+.mb-n-2 {
+    margin-bottom: -45px;
+    margin-top: -16px;
+}
+.mb-n-3 {
+    margin-bottom: -55px;
+    margin-top: -16px;
+}
+.mb-n-4 {
+    margin-bottom: -62px;
+    margin-top: -16px;
+}
+
+.start-10 {
+    left: 10px;
+}
+
+.bottom-10 {
+    bottom: 10px;
+}
+
+.start-30 {
+    left: 30px;
+}
+
+.start-95 {
+    left: 95px;
+}
+
+.top-38 {
+    top: 38px;
+}
+
+.top-n-16 {
+    top: -16px;
+}
+
+.right-n-9 {
+    right: -9px;
+}
+
+.top-80 {
+    top: 80px;
+}
+
+.top-165 {
+    top: 165px;
+}
+
+.bottom-46px {
+    bottom: 46%;
+}
+
+.right-10px {
+    right: 10px;
+}
+
+/* CSS Transform */
+.rotate-1-74 { transform: rotate(1.74deg); }
+.rotate-4 { transform: rotate(4deg); }
+.rotate-5-3 { transform: rotate(5.33deg); }
+.rotate-5-33 { transform: rotate(5.33deg); }
+.rotate-n-7 { transform: rotate(-7.74deg); }
+.rotate-7 { transform: rotate(7.74deg); }
+.rotate-8 { transform: rotate(8deg); }
+.rotate-12 { transform: rotate(12deg); }
+.rotate-18 { transform: rotate(18deg); }
+
+/* Footer */
+.footer-top {
+    padding: 130px 0px;
+    border-bottom: 1px solid #515151;
+}
+
+.footer-bottom {
+    padding: 35px 0px;
+}
+
+/* Font weight */
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-800 {
+    font-weight: 800;
+}
+.fw-900 {
+    font-weight: 900;
+}
+
+/* SVG */
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+/* Line height */
+.line-height-7 {
+    line-height: 1.7em;
+}
+.line-height-12 {
+    line-height: 3.188em;
+}

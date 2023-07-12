@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/images/favicon_io/favicon.ico">
+    <title>Recherche - Template Coaching</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand-lg">
+
+        <!-- ========== NavBar ========== -->
+        <div class="container">
+            <nav class="header-navbar navbar-nav-wrap" id="header-navbar">
+                <!-- Default Logo -->
+                <a href="#" class="navbar-brand" aria-label="Coaching">
+                    <img src="./assets/images/logo-dark.png" alt="Coaching Logo" class="navbar-brand-logo">
+                </a>
+                <!-- End Default Logo -->
+
+                <!--  -->
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-absolute-top-scroller">
+                        <ul class="navbar-nav gap-4">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" aria-current="page" role="link" aria-expanded="false">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" aria-current="page" role="link" aria-expanded="false">Comment ça marche?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" aria-current="page" role="link" aria-expanded="false">Inscription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-theme-dark btn-transition" target="_blank">Inscription coach</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+            </nav>
+        </div>
+    </header>
+    <!-- ========== End HEADER ========== -->
+    
+    <!-- ========== Main ========== -->
+    <main id="content" role="main" class="overflow-x-hidden">
+        
+        <div class="container-fluid gx-0 mb-5 pb-5 position-relative">
+            <div class="content-hero-section bg-theme-gradient-primary position-relative w-100 m-0 p-0">
+                <div class="row justify-content-center align-items-center h-100 position-relative z-3">
+                    <div class="col-10">
+                        <div class="mx-lg-auto">
+                            <h1 class="font-family-montserrat-semibold hero-heading text-center">Trouvez le coach sportif <br>qui vous correspond!</h1>
+                            <form class="mx-sm-3 my-lg-5" id="hero-form">
+                                <div class="box-form-hero box-shadow">
+                                    <div class="row gap-0">
+                                        <div class="col-4 p-0 border-end">
+                                            <div class="form-group form-group-rounded-left-top-8 form-group-rounded-left-bottom-8">
+                                                <select class="form-control form-control-lg rounded-0 border-0">
+                                                    <option disabled selected aria-selected="true">Votre sport</option>
+                                                    <option value="sport-1">Sport 1</option>
+                                                    <option value="sport-2">Sport 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="form-group">
+                                                <select class="form-control form-control-lg rounded-0 border-0">
+                                                    <option disabled selected aria-selected="true">Votre lieux d’entrainement</option>
+                                                    <option value="lieux-1">Lieu 1</option>
+                                                    <option value="lieux-2">Lieu 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <button type="submit" class="btn btn-primary w-100 h-100 rounded-start-0 border-0 form-group-rounded-right-top-8 form-group-rounded-right-bottom-8 btn-theme-gradient font-family-montserrat-medium">Trouver mon coach!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search section -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="w-100 rounded-3">
+                        <div class="px-3 py-2 bg-light-color">
+                            <h6 class="font-family-montserrat-semibold fw-500 fs-17 mt-1">Recherchez votre coach grâce à nos filtres</h6>
+
+                            <div class="type-coaching my-4">
+                                <span class="font-family-montserrat-medium fw-700 fs-14 primary-color">Type de coach</span>
+                                <form class="my-3">
+                                    <div class="input-group mb-1 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Coachs certifiés </label>
+                                    </div>
+                                    <div class="input-group mb-3 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Coachs non certifiés </label>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="price-coaching my-4">
+                                <span class="font-family-montserrat-medium fw-700 fs-14 primary-color">Prix</span>
+                                <form class="my-3">
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="200" value="0" step="100">
+                                        <input type="range" class="range-max" min="0" max="200" value="200" step="100">
+                                    </div>
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <input type="text" class="input-min text-start" value="20 CHF">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" class="input-max text-end" value="200 CHF">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="hour-coaching my-4">
+                                <span class="font-family-montserrat-medium fw-700 fs-14 primary-color">Horaire</span>
+                                <form class="my-3">
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="200" value="0" step="100">
+                                        <input type="range" class="range-max" min="0" max="200" value="200" step="100">
+                                    </div>
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <input type="text" class="input-min text-start" value="6:00">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" class="input-max text-end" value="23:00">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="gender-coaching my-4">
+                                <span class="font-family-montserrat-medium fw-700 fs-14 primary-color">Sex</span>
+                                <form class="my-3">
+                                    <div class="input-group mb-1 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Homme</label>
+                                    </div>
+                                    <div class="input-group mb-3 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Femme</label>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="courses-coaching my-4">
+                                <span class="font-family-montserrat-medium fw-700 fs-14 primary-color">Type de cours</span>
+                                <form class="my-3">
+                                    <div class="input-group mb-1 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Personal Training</label>
+                                    </div>
+                                    <div class="input-group mb-1 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Group Training</label>
+                                    </div>
+                                    <div class="input-group mb-3 align-items-start gap-1">
+                                        <div class="">
+                                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label for="" class="font-family-montserrat-medium dark-color fs-14">Online</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+
+                    <!-- Continue -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 p-0 text-start">
+                                <h5 class="font-family-montserrat-semibold fw-500 fs-17">La sélection Coachingo !</h5>
+
+                                <div class="become-coach bg-theme-gradient-primary rounded-3 text-start overflow-hidden">
+                                    <div class="row p-5">
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Continue -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 p-0 text-start">
+                                <div class="become-coach rounded-3 text-start overflow-hidden">
+                                    <div class="row p-5 row-gap-3">
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                            <div class="card overflow-hidden border-0" style="width: 100%;">
+                                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="w-100 object-fit-cover" style="height: 239px;">
+                                                <div class="card-body bg-light-color">
+                                                    <div class="d-flex align-items-center">
+                                                        <h5 class="card-title">Nina</h5>
+                                                        <img src="./assets/images/tickpng.parspng.com-4.png" alt="" class="object-fit-cover" style="height: 25px; width: 25px; margin-top: -8px;">
+                                                    </div>
+                                                    <h5 class="card-title">Fitness</h5>
+                                                    <p class="card-text font-family-montserrat-medium fs-13">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="btn bg-primary-color light-color font-family-montserrat-regular fs-14">10 000 CHF</a>
+                                                </div>
+                                                <div class="p-coaching-tagged position-absolute z-3 text-center right-10px bottom-46px d-flex">
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">P</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">G</span>
+                                                    <span class="w-25px h-25px bg-primary-color rounded-2 d-block light-color font-family-montserrat-semibold fs-17 ms-2">O</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row my-5">
+                                        <div class="col-12 text-center">
+                                            <a href="#" role="button" class="link-light btn btn-theme-gradient px-5 py-1">Voir plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue -->
+        <div class="container my-xxl-5 my-xl-5 my-lg-5 my-md-5 py-xxl-5 py-xl-5 py-lg-5 py-md-5">
+            <div class="row py-xxl-5">
+                <div class="col-12 p-0 text-center">
+                    <h3 class="font-family-montserrat-semibold fs-42 py-4">Envie de devenir coach ?</h3>
+
+                    <div class="become-coach bg-theme-gradient-primary w-75 mx-auto rounded-3 text-start overflow-hidden">
+                        <div class="row">
+                            <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                                <div class="box-content ps-xl-5 py-xl-5">
+                                    <h4>Comment ça marche ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+        
+                                    <a href="#" class="text-decoration-none py-2 px-3 text-center rounded-2 d-block w-50 btn-theme-dark">Je veux m’inscrire !</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" class="w-100 h-100" alt="" style="clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%); border-bottom-left-radius: 42px; border-top-left-radius: 82px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- ========== End Main ========== -->
+    
+    <!-- ========== Footer ========== -->
+    <footer id="footer" class="bg-dark-color p-0 footer d-none">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <span class="font-family-montserrat-medium fs-15 fw-600 text-uppercase light-color d-block">Menu</span>
+                                <ul class="na">
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Accueil</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Devenir coach Coachingo</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Inscription client</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Télécharger l'application App Store</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Télécharger l'application Play Store</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-container">
+                        <div class="row">
+                            <div class="footerbottom-left col-12 col-sm-5 col-md-6 text-start">
+                                <p class="p text-white line-height-7">
+                                    All rights reserved © 2023 Fam Digitale
+                                </p>
+                            </div>
+                            <div class="footerbottom-right col-12 col-sm-7 col-md-6">
+                                <ul class="d-flex justify-content-sm-end">
+                                    <li class="mr-100">
+                                        <a class="text-white p" href="">
+                                            Terms &amp; Condition
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white p" href="">
+                                            Privacy policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End Footer ========== -->
+
+    <!-- JavaScript section -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+        const rangeInput = document.querySelectorAll(".range-input input"),
+        priceInput = document.querySelectorAll(".price-input input"),
+        range = document.querySelector(".slider .progress");
+        let priceGap = 20;
+        priceInput.forEach(input =>{
+            input.addEventListener("input", e =>{
+                let minPrice = parseInt(priceInput[0].value),
+                maxPrice = parseInt(priceInput[1].value);
+                
+                if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
+                    if(e.target.className === "input-min"){
+                        rangeInput[0].value = minPrice;
+                        range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                    }else{
+                        rangeInput[1].value = maxPrice;
+                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

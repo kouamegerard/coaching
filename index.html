@@ -2,16 +2,522 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/images/favicon_io/favicon.ico">
     <title>Home - Template Coaching</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
     
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand-lg">
+
+        <!-- ========== NavBar ========== -->
+        <div class="container">
+            <nav class="header-navbar navbar-nav-wrap" id="header-navbar">
+                <!-- Default Logo -->
+                <a href="#" class="navbar-brand" aria-label="Coaching">
+                    <img src="./assets/images/logo-dark.png" alt="Coaching Logo" class="navbar-brand-logo">
+                </a>
+                <!-- End Default Logo -->
+
+                <!--  -->
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-absolute-top-scroller">
+                        <ul class="navbar-nav gap-4">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" aria-current="page" role="link" aria-expanded="false">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" aria-current="page" role="link" aria-expanded="false">Comment ça marche?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" aria-current="page" role="link" aria-expanded="false">Inscription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-theme-dark btn-transition" target="_blank">Inscription coach</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+            </nav>
+        </div>
+    </header>
+    <!-- ========== End HEADER ========== -->
+    
+    <!-- ========== Main ========== -->
+    <main id="content" role="main" class="overflow-x-hidden">
+        <div class="container-fluid gx-0 mb-5 pb-5 position-relative">
+            <div class="content-hero bg-theme-gradient-primary position-relative w-100 m-0 p-0">
+                <div class="row justify-content-center align-items-center h-100 position-relative z-3">
+                    <div class="col-10">
+                        <div class="mx-lg-auto">
+                            <h1 class="font-family-montserrat-semibold hero-heading text-start">Trouvez le coach sportif <br>qui vous correspond!</h1>
+                            <form class="mx-sm-3 my-lg-5" id="hero-form">
+                                <div class="box-form-hero box-shadow">
+                                    <div class="row gap-0">
+                                        <div class="col-4 p-0 border-end">
+                                            <div class="form-group form-group-rounded-left-top-8 form-group-rounded-left-bottom-8">
+                                                <select class="form-control form-control-lg rounded-0 border-0">
+                                                    <option disabled selected aria-selected="true">Votre sport</option>
+                                                    <option value="sport-1">Sport 1</option>
+                                                    <option value="sport-2">Sport 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="form-group">
+                                                <select class="form-control form-control-lg rounded-0 border-0">
+                                                    <option disabled selected aria-selected="true">Votre lieux d’entrainement</option>
+                                                    <option value="lieux-1">Lieu 1</option>
+                                                    <option value="lieux-2">Lieu 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <button type="submit" class="btn btn-primary w-100 h-100 rounded-start-0 border-0 form-group-rounded-right-top-8 form-group-rounded-right-bottom-8 btn-theme-gradient font-family-montserrat-medium">Trouver mon coach!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 py-2 pe-5 bg-light-color gap-3 d-flex flex-row align-items-center">
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-4 p-2">
+                        <span class="dotted bg-primary-color rounded-5 d-block"></span>
+                        <span class="d-block font-family-montserrat-medium f-size-14">Fitness</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-absolute">
+                <img src="assets/images/pexels-li-sun-2294400.jpeg" alt="Coaching Hero Img" class="theme-box-shadow">
+            </div>
+        </div>
+
+        <!-- Continue -->
+        <div class="container my-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-6">
+                    <div class="card w-100 p-0 m-0 border-0">
+                        <div class="card-body">
+                            <h2 class="card-title">Comment ça marche ?</h2>
+                            <p class="card-text mt-2 w">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+                            </p>
+                            <div class="w-100" style="height: 385px;">
+                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="how is work" class="img-fluid h-100 rounded theme-box-shadow mt-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 position-relative height-638px pt-3">
+                    <div class="theme-box-shadow card-overflow py-0 px-3 bg-primary-color w-50 position-absolute start-95 top-165 rounded-4">
+                        <h1 class="font-family-montserrat-semibold fs-110 mb-n-2 light-opacity-color">01</h1>
+                        <div class="description p-1">
+                            <h4 class="subhead fs-34 font-family-montserrat-semibold light-color">Recherchez</h4>
+                            <span class="d-block subhead f-size-14 light-color font-family-montserrat-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor</span>
+                        </div>
+                    </div>
+                    <div class="theme-box-shadow card-overflow py-0 px-3 bg-secondary-color w-50 position-absolute end-0 top-50 rounded-4 z-2">
+                        <h1 class="font-family-montserrat-semibold fs-110 mb-n-2 light-opacity-color">02</h1>
+                        <div class="description p-1">
+                            <h4 class="subhead fs-34 font-family-montserrat-semibold light-color">Recherchez</h4>
+                            <span class="d-block subhead fs-15 light-color font-family-montserrat-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
+                        </div>
+                    </div>
+                    <div class="theme-box-shadow card-overflow py-0 px-3 bg-primary-color w-50 position-absolute start-30 bottom-0 rounded-4">
+                        <h1 class="font-family-montserrat-semibold fs-110 mb-n-2 light-opacity-color">03</h1>
+                        <div class="description p-1">
+                            <h4 class="subhead fs-34 font-family-montserrat-semibold light-color">Recherchez</h4>
+                            <span class="d-block subhead f-size-14 light-color font-family-montserrat-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5 py-5">
+                <div class="col-12 text-center">
+                    <a href="#" role="button" class="link-light btn btn-theme-gradient px-5 py-3">Trouvez le sport qui vous convient !</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue 2 -->
+        <div class="container  my-5">
+            <div class="row justify-content-center gap-xxl-3 gap-xl-4 gap-sm-3 gap-lg-3 g-md-2">
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3757377.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-li-sun-2294400.jpeg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 overflow-hidden theme-box-shadow rounded-3 p-0" style="height: 240px; width: 240px;">
+                    <div class="coachingo-category position-relative overflow-hidden text-center">
+                        <img src="./assets/images/pexels-cliff-booth-4058411.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <span class="d-block position-absolute bottom-10 start-50 translate-middle-x light-color">Fitness</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue 2 -->
+        <div class="container-fluid  my-5 py-5">
+            <div class="row align-items-center my-xl-5">
+                <div class="col-6 p-0">
+                    <div class="img-box height-461 w-100 overflow-hidden theme-box-border">
+                        <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="px-lg-4 w-75">
+                        <h3 class="font-family-montserrat-semibold fs-42">Personal Training</h3>
+                        <span class="d-block font-family-montserrat-regular fs-17">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullaut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center my-xl-5">
+                <div class="col-6">
+                    <div class="px-lg-4 w-75">
+                        <h3 class="font-family-montserrat-semibold fs-42">Group Training</h3>
+                        <span class="d-block font-family-montserrat-regular fs-17">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullaut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</span>
+                    </div>
+                </div>
+                <div class="col-6 p-0">
+                    <div class="img-box height-461 w-100 overflow-hidden theme-box-border-left">
+                        <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center my-xl-5">
+                <div class="col-6 p-0">
+                    <div class="img-box height-461 w-100 overflow-hidden theme-box-border">
+                        <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="px-lg-4 w-75">
+                        <h3 class="font-family-montserrat-semibold fs-42">Coaching Online</h3>
+                        <span class="d-block font-family-montserrat-regular fs-17">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullaut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid position-relative mb-xxl-5">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="section-app py-2 px-5 position-relative">
+                        <div class="row align-items-center justify-content-center w-100 h-100 position-relative ms-4">
+                            <div class="col-5">
+                                <div class="p-2">
+                                    <h3 class="font-family-montserrat-semibold fs-42">Suivi en direct grace à l’app Coachingo !</h3>
+                                    <span class="d-block font-family-montserrat-regular fs-15">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullaut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+                                    </span>
+                                </div>
+
+                                <div class="app-library p-2 mt-4">
+                                    <img src="./assets/images/app-playstore.png" alt="Play Store" srcset="" class="w-25">
+                                    <img src="./assets/images/app-appstore.png" alt="App Store" srcset="" class="w-25">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-section-img position-absolute top-38 z-2" style="height: 100%; top: -38px; right: 128px;">
+                <img src="./assets/images/header-iphone-mockups-2.png" class="w-100 h-100 img-fluid" />
+            </div>
+
+            <div class="tagged w-100 m-auto py-1 mb-2 position-absolute bottom-10">
+                <div class="row align-items-center justify-content-center ps-5" style="margin-left: -72px;">
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item">Messagerie</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-13">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item">Programme</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-28">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item">Reservation</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-43">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item">Suivi des cours</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-58">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item">Suivi des cours</span>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center ps-5" style="margin-bottom: -42px; margin-top: -28px; margin-right: -72px;">
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item ">Messagerie</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-13">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item ">Programme</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-28">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item ">Reservation</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-43">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item ">Suivi des cours</span>
+                    </div>
+                    <div class="col-2 col-xxl-2 col-md-2 col-lg-2 rotate-1-74 pt-theme-58">
+                        <span class="d-block w-100 bg-primary-color text-center light-color py-2 rounded-3 font-family-montserrat-medium fs-14 tagged-item ">Suivi des cours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue -->
+        <div class="container my-xxl-5 my-xl-5 my-lg-5 my-md-5 py-xxl-5 py-xl-5 py-lg-5 py-md-5">
+            <div class="row py-xxl-5">
+                <div class="col-12 p-0 text-center">
+                    <h3 class="font-family-montserrat-semibold fs-42 py-4">Envie de devenir coach ?</h3>
+
+                    <div class="become-coach bg-theme-gradient-primary w-75 mx-auto rounded-3 text-start overflow-hidden">
+                        <div class="row">
+                            <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                                <div class="box-content ps-xl-5 py-xl-5">
+                                    <h4>Comment ça marche ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+        
+                                    <a href="#" class="text-decoration-none py-2 px-3 text-center rounded-2 d-block w-50 btn-theme-dark">Je veux m’inscrire !</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <img src="./assets/images/pexels-jonathan-borba-3076516.jpeg" class="w-100 h-100" alt="" style="clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%); border-bottom-left-radius: 42px; border-top-left-radius: 82px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue -->
+        <div class="container-fluid bg-light-color mt-xxl-5 mt-5">
+            <div class="our-quality w-75 mx-auto p-xxl-5 p-xl-5 p-md-5 p-lg-5">
+                <div class="row gap-0 py-xxl-5  py-xl-5 py-md-5 py-lg-5">
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-4 p-0">
+                        <div class="w-90 mx-auto text-center d-flex flex-column align-items-center gap-md-2">
+                            <img src="./assets/images/starts.png" alt="" class="w-25">
+                            <h6 class="font-family-montserrat-semibold fs-17 mt-1">Flexibilité</h6>
+                            <span class="font-family-montserrat-regular fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-4 p-0">
+                        <div class="w-90 mx-auto text-center d-flex flex-column align-items-center gap-md-2">
+                            <img src="./assets/images/starts.png" alt="" class="w-25">
+                            <h6 class="font-family-montserrat-semibold fs-17 mt-1">Flexibilité</h6>
+                            <span class="font-family-montserrat-regular fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-4 p-0">
+                        <div class="w-90 mx-auto text-center d-flex flex-column align-items-center gap-md-2">
+                            <img src="./assets/images/starts.png" alt="" class="w-25">
+                            <h6 class="font-family-montserrat-semibold fs-17 mt-1">Flexibilité</h6>
+                            <span class="font-family-montserrat-regular fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-4 p-0">
+                        <div class="w-90 mx-auto text-center d-flex flex-column align-items-center gap-md-2">
+                            <img src="./assets/images/starts.png" alt="" class="w-25">
+                            <h6 class="font-family-montserrat-semibold fs-17 mt-1">Flexibilité</h6>
+                            <span class="font-family-montserrat-regular fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- ========== End Main ========== -->
+    
+    <!-- ========== Footer ========== -->
+    <footer id="footer" class="bg-dark-color p-0 footer d-none">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <span class="font-family-montserrat-medium fs-15 fw-600 text-uppercase light-color d-block">Menu</span>
+                                <ul class="na">
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Accueil</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Devenir coach Coachingo</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Inscription client</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Télécharger l'application App Store</a> </li>
+                                    <li class="nav-item"> <a href="#" class="text-decoration-none fs-14 light-color">Télécharger l'application Play Store</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="footer-col-one">
+                                <img src="./assets/images/logo-light.png" class="footer-logo w-75" alt="footer logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-container">
+                        <div class="row">
+                            <div class="footerbottom-left col-12 col-sm-5 col-md-6 text-start">
+                                <p class="p text-white line-height-7">
+                                    All rights reserved © 2023 Fam Digitale
+                                </p>
+                            </div>
+                            <div class="footerbottom-right col-12 col-sm-7 col-md-6">
+                                <ul class="d-flex justify-content-sm-end">
+                                    <li class="mr-100">
+                                        <a class="text-white p" href="">
+                                            Terms &amp; Condition
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white p" href="">
+                                            Privacy policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End Footer ========== -->
 
     <!-- JavaScript section -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
