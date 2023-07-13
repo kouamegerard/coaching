@@ -144,9 +144,18 @@
     margin-right: -38px;
 }
 
+.theme-boder-color-prime { border-color: #F37D49; }
+
+.theme-border-width-2 { border-width: 2px; }
+.theme-border-width-4 { border-width: 4px; }
+.theme-border-style-solid { border-style: solid; }
+
 /* Sizing */
 .w-299px {
     width: 299px;
+}
+.w-242px {
+    width: 242px;
 }
 .w-210px {
     width: 210px;
@@ -154,21 +163,17 @@
 .w-25px {
     width: 25px;
 }
-.h-25px {
-    height: 25px;
-}
-.h-299px {
-    height: 299px;
-}
-.h-210px {
-    height: 210px;
-}
 .w-33 {
     width: 33.33%;
 }
 .w-40 {width: 40%;}
+.w-80 {width: 80%;}
 .w-90 {width: 90%;}
-.w-90 {width: 90%;}
+
+.h-25px { height: 25px; }
+.h-299px { height: 299px; }
+.h-242px { height: 242px; }
+.h-210px { height: 210px; }
 
 /* Font size */
 .fs-110 {
