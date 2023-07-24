@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --dark: #000000;
+    --light: #FFFFFF;
+    --main: #EB5062;
+    --primary: #F37D49;
+    --light-gray: #F5F5F5;
+    --lightness-dark: #161616;
+    --lightness-gray: #FFFFFF59;
+    --nav-menu-down: #2A2A2A;
+    --genx-card-bg: #FFFFFF;
+    --genx-card-border-color: #F7F7F7;
+    --genx-shadow-box: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    --genx-shadow-box-lg: 0 0 45px 0 rgba(0, 0, 0, 0.12);
+    --genx-shadow-box-sm: 0 .75rem 6rem rgba(56, 65, 74, 0.03);
+    --genx-shadow-box-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --ff-montserrat: 'Montserrat', sans-serif;
+}
+
+*, html, body {
+    font-family: var(--ff-montserrat);
+}
+
+.ff-montserrat {
+    font-family: var(--ff-montserrat);
+}
+
+.overlay-box {
+    background: #000 none repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;
+    -ms-transition: opacity .3s linear;
+    -moz-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    overflow: hidden;
+}
+
+.coachingo .coachingo-header[header-theme=dashboard-theme] {
+    background: var(--dark);
+    color: var(--dark);
+}
+
+.coachingo-header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    box-shadow: 0 0 11px rgba(0, 0, 0, .13);
+    margin: 0 auto;
+}
+
+.header-navbar .navbar-header-wrapper .navbar-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.bg-nav-menu{
+    background-color: var(--nav-menu-down);
+}
+
+.text-nav-hover:hover {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.divider {
+    padding: 0.50rem;
+}
+
+.genx-sidenav .genx-sidenav-menu .nav .genx-sidenav-menu-nested {
+    margin-left: 0.5rem;
+}
+
+.genx-sidenav .genx-sidenav-menu .nav .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.genx-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--genx-card-bg);
+    background-clip: border-box;
+    border: 0 solid var(--genx-card-border-color);
+    border-radius: 0.25rem;
+}
+
+.genx-card {
+    box-shadow: var(--genx-box-shadow-sm);
+    margin-bottom: 1.5rem;
+}

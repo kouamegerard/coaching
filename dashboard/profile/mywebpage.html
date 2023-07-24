@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>My Web Page | Dashboard - Coachingo</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./../../assets/css/style.css">
+        <link rel="stylesheet" href="./../../assets/css/theme.css">
+        <link rel="stylesheet" href="./../../assets/css/theme.dashboard.css">
+        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="genx-nav-fixed">
+        <nav class="genx-topnav navbar navbar-expand navbar-dark bg-dark-color">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">
+                <img src="./../../assets/images/app-icon-logo-template.png" class="img-fluid" style="height: 45px; width: 45px;" />
+            </a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 d-xxl-none d-xl-none d-lg-none d-md-none d-sm-block" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group d-none">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-family-montserrat-medium text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./../../assets/images/pexels-li-sun-2294400.jpeg" class="img-fluid rounded-3" style="height: 40px; width: 40px;" />
+                        <span>Li Sun</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm font-family-montserrat-extra-light fs-6" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="genx-sidenav accordion bg-dark-color light-color text-decoration-none" id="sidenavAccordion">
+                    <div class="genx-sidenav-menu">
+                        <div class="nav">
+                            <!-- <div class="genx-sidenav-menu-heading">Core</div> -->
+                            <a class="nav-link light-color text-decoration-none bg-primary-color text-uppercase fs-13 text-nav-hover" href="index.html">
+                                <div class="genx-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                tableau de bord
+                            </a>
+                            <div class="divider"></div>
+                            <a class="nav-link collapsed light-color text-decoration-none bg-nav-menu text-nav-hover text-uppercase fs-13" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                Profil
+                                <div class="genx-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="genx-sidenav-menu-nested nav">
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="profile.html"><i class="fa-solid fa-square"></i> Mon Profil</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="mywebpage.html"><i class="fa-solid fa-square primary-color"></i>Ma page web</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="bills.html"><i class="fa-solid fa-square"></i>Paiements</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="certification.html"><i class="fa-solid fa-square"></i>Certification</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="featured.html"><i class="fa-solid fa-square"></i>Mise en avant</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="subscribtion.html"><i class="fa-solid fa-square"></i>Abonnement</a>
+                                </nav>
+                            </div>
+                            <div class="divider"></div>
+                            
+                            <a class="nav-link collapsed light-color text-decoration-none bg-nav-menu text-nav-hover text-uppercase fs-13 gap-3" href="#" data-bs-toggle="collapse" data-bs-target="#seance-collapse" aria-expanded="false" aria-controls="seance-collapse">
+                                Séances <span class="bg-primary-color light-color font-family-montserrat-medium fs-15 px-2 rounded-2">2</span>
+                                <div class="genx-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="seance-collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="genx-sidenav-menu-nested nav">
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="profile.html"><i class="fa-solid fa-square"></i>Calendrier</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="mywebpage.html"><i class="fa-solid fa-square"></i>Gérer mes séances</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="bills.html"><i class="fa-solid fa-square"></i>Commandes</a>
+                                </nav>
+                            </div>
+                            <div class="divider"></div>
+                            
+                            <a class="nav-link collapsed light-color text-decoration-none bg-nav-menu text-nav-hover text-uppercase fs-13" href="#" data-bs-toggle="collapse" data-bs-target="#client-collapse" aria-expanded="false" aria-controls="client-collapse">
+                                Clients
+                                <div class="genx-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="client-collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="genx-sidenav-menu-nested nav">
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="profile.html"><i class="fa-solid fa-square"></i>Mes clients</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="mywebpage.html"><i class="fa-solid fa-square"></i>Mes prospects</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="bills.html"><i class="fa-solid fa-square"></i>Avis clients</a>
+                                </nav>
+                            </div>
+                            <div class="divider"></div>
+                            
+                            <a class="nav-link collapsed light-color text-decoration-none bg-nav-menu text-nav-hover text-uppercase fs-13" href="#" data-bs-toggle="collapse" data-bs-target="#prestation-collapse" aria-expanded="false" aria-controls="prestation-collapse">
+                                Prestations
+                                <div class="genx-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="prestation-collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="genx-sidenav-menu-nested nav">
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="profile.html"><i class="fa-solid fa-square"></i>Mes offres</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="mywebpage.html"><i class="fa-solid fa-square"></i>Mes évenements</a>
+                                </nav>
+                            </div>
+                            <div class="divider"></div>
+                            
+                            <a class="nav-link collapsed light-color text-decoration-none bg-nav-menu text-nav-hover text-uppercase fs-13" href="#" data-bs-toggle="collapse" data-bs-target="#chiffre-collapse" aria-expanded="false" aria-controls="chiffre-collapse">
+                                Chiffres
+                                <div class="genx-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="chiffre-collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="genx-sidenav-menu-nested nav">
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="profile.html"><i class="fa-solid fa-square"></i>Comptabilité</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="mywebpage.html"><i class="fa-solid fa-square"></i>Factures</a>
+                                    <a class="nav-link light-color text-decoration-none fs-13 gap-1" href="bills.html"><i class="fa-solid fa-square"></i>Analytics générales</a>
+                                </nav>
+                            </div>
+                            <div class="divider"></div>
+                            
+                            <a class="nav-link collapsed light-color text-decoration-none bg-nav-menu text-nav-hover text-uppercase fs-13 gap-3" href="#" data-bs-toggle="collapse" data-bs-target="#message-collapse" aria-expanded="false" aria-controls="message-collapse">
+                                Messages <span class="bg-primary-color light-color font-family-montserrat-medium fs-15 px-2 rounded-2">2</span>
+                            </a>
+                            
+                            <div class="divider"></div>
+                            
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+            <div id="layoutSidenav_content" class="bg-light-color">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="my-4 fs-28 fw-700">Ma page web</h1>
+                        <!-- <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol> -->
+
+                        <div class="row">
+                            <div class="col-xl-6 col-md-6 col-lg-6">
+                                <form>
+                                    <div class="card mb-4 border-0 genx-card">
+                                        <div class="card-header bg-transparent border-0">
+                                            <span class="ff-montserrat fw-600 fs-15">Informations publiques</span>
+                                        </div>
+                                        <div class="card-body border-0">
+                                            <div class="w-100 my-3">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label class="font-family-montserrat-medium fs-15" for="nom">Nom</label>
+                                                        <input class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15" type="text" id="nom" value="">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label class="font-family-montserrat-medium fs-15" for="prenom">Prénom(s)</label>
+                                                        <input class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15" type="text" id="prenom">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 my-3">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label class="font-family-montserrat-medium fs-15" for="identifiant">Identifiant</label>
+                                                        <input class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15" type="text" id="identifiant" value="">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label class="font-family-montserrat-medium fs-15" for="prenom">Sport</label>
+                                                        <div class="input-group gap-3">
+                                                            <select class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15" name="status">
+                                                                <option disabled selected>Status Pro</option>
+                                                                <option value="status-1">Status 1</option>
+                                                                <option value="status-2">Status 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <label for="about" class="font-family-montserrat-medium fs-15">à propos</label>
+                                                <div class="input-group gap-3">
+                                                    <textarea class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15" rows="5" name="about"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 my-3">
+                                                <label for="type-sport" class="font-family-montserrat-medium fs-15">Type de cours proposés</label>
+                                                <div class="input-group gap-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input bg-primary-color border-0" type="checkbox" id="perso-train" value="" >
+                                                        <label class="form-check-label font-family-montserrat-medium fs-15" for="perso-train">Personal Training</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input bg-primary-color border-0" type="checkbox" id="group-train" value="group-train">
+                                                        <label class="form-check-label font-family-montserrat-medium fs-15" for="group-train">Group Training</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input bg-light-color border-0" type="checkbox" id="online" value="online">
+                                                        <label class="form-check-label font-family-montserrat-medium fs-15" for="online">Online</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <label for="type-seance" class="font-family-montserrat-medium fs-15">Une séance type</label>
+                                                <div class="input-group gap-3">
+                                                    <textarea class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15" rows="5" name="type-seance"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 my-3">
+                                                <label for="type-sport" class="font-family-montserrat-medium fs-15">Lieux de cours proposés</label>
+                                                <div class="input-group gap-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input bg-primary-color border-0" type="checkbox" id="athome-train" value="" >
+                                                        <label class="form-check-label font-family-montserrat-medium fs-15" for="athome-train">A domicile</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input bg-primary-color border-0" type="checkbox" id="salle-train" value="group-train">
+                                                        <label class="form-check-label font-family-montserrat-medium fs-15" for="salle-train">En salle</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input bg-light-color border-0" type="checkbox" id="online-train" value="online-train">
+                                                        <label class="form-check-label font-family-montserrat-medium fs-15" for="online-train">en ligne</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 my-3">
+                                                <div class="row m-0 p-0">
+                                                    <div class="col p-0">
+                                                        <label class="font-family-montserrat-medium fs-15" for="zone">Ma zone de déplacement</label>
+                                                        <div class="input-group gap-3">
+                                                            <select class="form-control bg-light-color border-0 rounded-start font-family-montserrat-medium fs-15" name="status">
+                                                                <option disabled >Lieux</option>
+                                                                <option value="status-1" selected>Ma ville</option>
+                                                                <option value="status-2">Ville 1</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <label class="font-family-montserrat-medium fs-15" for="prenom">Sport</label>
+                                                        <div class="input-group gap-3">
+                                                            <select class="form-control bg-light-color border-0 rounded-end font-family-montserrat-medium fs-15" name="status">
+                                                                <option disabled >Rayon</option>
+                                                                <option value="status-1" selected>+ un rayon de 30km</option>
+                                                                <option value="status-2">+ un rayon de 20km</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 my-3 d-flex justify-content-end">
+                                                <button class="input-group-text bg-primary-color light-color border-0 rounded-3 box-shadow-10 fs-14 w-auto gap-4 align-content-end d-flex justify-content-between py-2 px-4" id="inputGroup-sizing-default">
+                                                    <span class="font-family-montserrat-medium fs-14">Enregistrer</span>
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-lg-6">
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <div class="card mb-4 border-0 genx-card">
+                                            <div class="card-header bg-transparent border-0">
+                                                <span class="ff-montserrat fw-600 fs-15">Images</span>
+                                            </div>
+                                            <div class="card-body border-0 position-relative">
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                        <label for="file" class="font-family-montserrat-medium fs-15">(Taille recommandée : 300 X 800 px)</label>
+                                                        <form action="/file-upload" class="">
+                                                            <div class="w-100 my-3 dropzone bg-light-color dz-clickable" id="my-awesome-dropzone" data-plugin="dropzone" style="background-color: #F5F5F5!important;">
+                                                                <div class="input-group gap-3">
+                                                                    <input type="file" name="file" class="form-control bg-light-color border-0 rounded-3 font-family-montserrat-medium fs-15 d-none">
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-100 my-3">
+                                                                <span class="ff-montserrat fw-600 fs-15">Profil ( 300 X 300 px)</span>
+                                                                <div class="d-flex gap-2">
+                                                                    <img src="./../../assets/images/pexels-cliff-booth-4058411.jpg" style="height: 125px; width: 125px; object-fit: cover;" class="rounded-2"/>
+                                                                    <img src="./../../assets/images/pexels-cliff-booth-4058411.jpg" style="height: 125px; width: 125px; object-fit: cover;" class="rounded-2" />
+                                                                    <img src="./../../assets/images/pexels-cliff-booth-4058411.jpg" style="height: 125px; width: 125px; object-fit: cover;" class="rounded-2" />
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="w-100 my-3">
+                                                                <div class="d-flex">
+                                                                    <div class="d-block ms-2">
+                                                                        <span class="ff-montserrat fw-600 fs-14 d-block">Profil ( 300 X 300 px)</span>
+                                                                        <img src="./../../assets/images/pexels-cliff-booth-4058411.jpg" style="height: 125px; width: 125px; object-fit: cover;" class="rounded-2"/>
+                                                                    </div>
+                                                                    <div class="d-block ms-2">
+                                                                        <span class="ff-montserrat fw-600 fs-14 d-block">Profil ( 300 X 300 px)</span>
+                                                                        <img src="./../../assets/images/pexels-cliff-booth-4058411.jpg" style="height: 125px; width: 125px; object-fit: cover;" class="rounded-2"/>
+                                                                    </div>
+                                                                    <div class="d-block ms-2">
+                                                                        <span class="ff-montserrat fw-600 fs-14 d-block">Profil ( 300 X 300 px)</span>
+                                                                        <img src="./../../assets/images/pexels-cliff-booth-4058411.jpg" style="height: 125px; width: 125px; object-fit: cover;" class="rounded-2"/>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="w-100 my-3 d-flex justify-content-end">
+                                                                <button class="input-group-text bg-primary-color light-color border-0 rounded-3 box-shadow-10 fs-14 w-auto gap-4 align-content-end d-flex justify-content-between py-2 px-4" id="inputGroup-sizing-default">
+                                                                    <span class="font-family-montserrat-medium fs-14">Enregistrer</span>
+                                                                    <i class="fa-solid fa-angle-right"></i>
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Coachingo 2023</div>
+                            <div>
+                                <a href="https://fam-digitale.com" class="text-decoration-none dark-color">Fam Digitale</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+
+        <script defer>
+            document.querySelector('.dz-button').innerHTML = `<span class="fs-22 ff-montserrat fw-700">+</span>`;
+        </script>
+    </body>
+</html>
