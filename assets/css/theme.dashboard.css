@@ -26,6 +26,22 @@
     font-family: var(--ff-montserrat);
 }
 
+.bg-orange {
+    background-color: var(--primary);
+}
+
+.color-orange {
+    color: var(--primary);
+}
+
+.bg-vermillon {
+    background-color: var(--main);
+}
+
+.color-vermillon {
+    color: var(--main);
+}
+
 .overlay-box {
     background: #000 none repeat scroll 0 0;
     bottom: 0;
@@ -103,4 +119,9 @@
 .genx-card {
     box-shadow: var(--genx-box-shadow-sm);
     margin-bottom: 1.5rem;
+}
+
+
+.fs-12 {
+    font-size: 12px;
 }
